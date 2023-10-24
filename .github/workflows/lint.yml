@@ -10,8 +10,4 @@ jobs:
       - name: Lint
         uses: docker://ghcr.io/realm/swiftlint:0.53.0
         with:
-          args: 
-            - --quiet
-            - --strict
-            - --reporter
-            - github-actions-logging
+          args: lint --quiet --strict --reporter github-actions-logging
